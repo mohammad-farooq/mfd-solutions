@@ -1,0 +1,26 @@
+
+
+
+
+
+Notes for macbook 
+
+git log --oneline -10      # Recent commits
+git branch                 # Show local branches
+git remote -v              # Show GitHub remote
+
+git pull origin main
+
+git add .
+git commit -m "Describe your changes"
+git push origin main
+
+git status
+git diff
+
+
+save and push changes to GitHub
+git add .
+git commit -m "Describe your changes"
+git push origin main
+
