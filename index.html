@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+
+<html dir="ltr" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>MFD Solutions — Design &amp; Development</title>
 <meta content="MFD Solutions — complete IT services: web, mobile, cloud, AI, cybersecurity and design." name="description"/>
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;defs&gt;&lt;linearGradient id='g' x1='0' y1='0' x2='1' y2='1'&gt;&lt;stop offset='0' stop-color='%233b82f6'/&gt;&lt;stop offset='1' stop-color='%238b5cf6'/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;rect width='100' height='100' rx='22' fill='url(%23g)'/&gt;&lt;text x='50' y='68' font-size='46' font-weight='800' text-anchor='middle' fill='white' font-family='Arial'&gt;MFD&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
-
-<link rel="stylesheet" href="css/main-style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<script>
+/* Apply the saved language direction before first paint */
+(function () {
+  try {
+    var q = new URLSearchParams(location.search).get('lang');
+    var l = (q === 'ar' || q === 'en') ? q : localStorage.getItem('mfd-lang');
+    if (l === 'ar') { document.documentElement.lang = 'ar'; document.documentElement.dir = 'rtl'; }
+  } catch (e) {}
+})();
+</script>
+<link href="css/main-style.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -18,22 +30,22 @@
 <a class="logo" href="#">
 <div class="logo-icon">MFD</div>
 <div class="logo-text">
-<strong>MFD Solutions</strong>
-<span>Design &amp; Development</span>
+<strong data-i18n="">MFD Solutions</strong>
+<span data-i18n="">Design &amp; Development</span>
 </div>
 </a>
 <ul class="nav-links" id="navLinks">
-<li><a class="active" href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#more-details">More Details</a></li>
-<li><a href="#why-us">Why Us</a></li>
-<li><a href="#portfolio">Work</a></li>
-<li><a href="#pricing">Pricing</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a class="nav-cta" href="#contact">Get a Quote</a></li>
+<li><a class="active" data-i18n="" href="#home">Home</a></li>
+<li><a data-i18n="" href="#about">About</a></li>
+<li><a data-i18n="" href="#services">Services</a></li>
+<li><a data-i18n="" href="#more-details">More Details</a></li>
+<li><a data-i18n="" href="#why-us">Why Us</a></li>
+<li><a data-i18n="" href="#portfolio">Work</a></li>
+<li><a data-i18n="" href="#pricing">Pricing</a></li>
+<li><a data-i18n="" href="#faq">FAQ</a></li>
+<li><a class="nav-cta" data-i18n="" href="#contact">Get a Quote</a></li>
 </ul>
-<div class="nav-tools"><button aria-label="Switch to Arabic" aria-pressed="false" class="language-toggle" id="languageToggle" type="button">العربية</button><button aria-expanded="false" aria-label="Toggle menu" class="menu-toggle" id="menuToggle">☰</button></div>
+<div class="nav-tools"><button aria-label="Switch to Arabic" aria-pressed="false" class="language-toggle" id="languageToggle" type="button">العربية</button><button aria-expanded="false" aria-label="Toggle menu" class="menu-toggle" data-i18n-attrs="aria-label" id="menuToggle">☰</button></div>
 </nav>
 </header>
 <!-- ================= HERO CAROUSEL ================= -->
@@ -42,20 +54,20 @@
 <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');"></div>
 <div class="slide-inner">
 <div class="slide-content">
-<div class="slide-badge">Full-Service IT Partner</div>
-<h1>Complete <span class="accent">IT Services</span> for Modern Business</h1>
-<p>From web development, cloud infrastructure, and cybersecurity to AI automation — I deliver end-to-end technology solutions that scale with you.</p>
+<div class="slide-badge" data-i18n="">Full-Service IT Partner</div>
+<h1 data-i18n="">Complete <span class="accent">IT Services</span> for Modern Business</h1>
+<p data-i18n="">From web development, cloud infrastructure, and cybersecurity to AI automation — I deliver end-to-end technology solutions that scale with you.</p>
 <div class="slide-buttons">
-<a class="btn btn-primary" href="#contact">Start a Project <span class="arrow">→</span></a>
-<a class="btn btn-outline" href="#services">Explore Services</a>
+<a class="btn btn-primary" href="#contact"><span data-i18n="">Start a Project</span> <span class="arrow">→</span></a>
+<a class="btn btn-outline" data-i18n="" href="#services">Explore Services</a>
 </div>
 </div>
 <div class="slide-card">
-<h3>Why Work With Me</h3>
-<div class="slide-stat"><span class="lbl">Response Time</span><span class="val">Under 24h</span></div>
-<div class="slide-stat"><span class="lbl">Projects Delivered</span><span class="val">120+</span></div>
-<div class="slide-stat"><span class="lbl">Client Satisfaction</span><span class="val">100%</span></div>
-<div class="slide-stat"><span class="lbl">Support</span><span class="val">24/7 Global</span></div>
+<h3 data-i18n="">Why Work With Me</h3>
+<div class="slide-stat"><span class="lbl" data-i18n="">Response Time</span><span class="val" data-i18n="">Under 24h</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Projects Delivered</span><span class="val">120+</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Client Satisfaction</span><span class="val">100%</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Support</span><span class="val" data-i18n="">24/7 Global</span></div>
 </div>
 </div>
 </div>
@@ -63,20 +75,20 @@
 <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');"></div>
 <div class="slide-inner">
 <div class="slide-content">
-<div class="slide-badge">Cybersecurity Excellence</div>
-<h1>Protect Your Business with <span class="accent">Enterprise Security</span></h1>
-<p>Security audits, threat detection, firewall setup, and compliance — keeping your data safe from modern cyber threats.</p>
+<div class="slide-badge" data-i18n="">Cybersecurity Excellence</div>
+<h1 data-i18n="">Protect Your Business with <span class="accent">Enterprise Security</span></h1>
+<p data-i18n="">Security audits, threat detection, firewall setup, and compliance — keeping your data safe from modern cyber threats.</p>
 <div class="slide-buttons">
-<a class="btn btn-primary" href="#contact">Get a Security Audit <span class="arrow">→</span></a>
-<a class="btn btn-outline" href="#services">Learn More</a>
+<a class="btn btn-primary" href="#contact"><span data-i18n="">Get a Security Audit</span> <span class="arrow">→</span></a>
+<a class="btn btn-outline" data-i18n="" href="#services">Learn More</a>
 </div>
 </div>
 <div class="slide-card">
-<h3>Security Coverage</h3>
-<div class="slide-stat"><span class="lbl">Threats Blocked</span><span class="val">99.9%</span></div>
-<div class="slide-stat"><span class="lbl">Audits Performed</span><span class="val">200+</span></div>
-<div class="slide-stat"><span class="lbl">Compliance</span><span class="val">ISO / GDPR</span></div>
-<div class="slide-stat"><span class="lbl">Monitoring</span><span class="val">24/7/365</span></div>
+<h3 data-i18n="">Security Coverage</h3>
+<div class="slide-stat"><span class="lbl" data-i18n="">Threats Blocked</span><span class="val">99.9%</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Audits Performed</span><span class="val">200+</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Compliance</span><span class="val" data-i18n="">ISO / GDPR</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Monitoring</span><span class="val">24/7/365</span></div>
 </div>
 </div>
 </div>
@@ -84,20 +96,20 @@
 <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');"></div>
 <div class="slide-inner">
 <div class="slide-content">
-<div class="slide-badge">Cloud &amp; DevOps</div>
-<h1>Scale Faster with <span class="accent">Cloud Solutions</span> That Work</h1>
-<p>Migrate, optimize, and manage your infrastructure on AWS, Azure, and Google Cloud — with zero downtime and full control.</p>
+<div class="slide-badge" data-i18n="">Cloud &amp; DevOps</div>
+<h1 data-i18n="">Scale Faster with <span class="accent">Cloud Solutions</span> That Work</h1>
+<p data-i18n="">Migrate, optimize, and manage your infrastructure on AWS, Azure, and Google Cloud — with zero downtime and full control.</p>
 <div class="slide-buttons">
-<a class="btn btn-primary" href="#contact">Migrate to Cloud <span class="arrow">→</span></a>
-<a class="btn btn-outline" href="#portfolio">See Case Studies</a>
+<a class="btn btn-primary" href="#contact"><span data-i18n="">Migrate to Cloud</span> <span class="arrow">→</span></a>
+<a class="btn btn-outline" data-i18n="" href="#portfolio">See Case Studies</a>
 </div>
 </div>
 <div class="slide-card">
-<h3>Cloud Expertise</h3>
-<div class="slide-stat"><span class="lbl">Cost Reduction</span><span class="val">Up to 60%</span></div>
-<div class="slide-stat"><span class="lbl">Uptime SLA</span><span class="val">99.99%</span></div>
-<div class="slide-stat"><span class="lbl">Platforms</span><span class="val">AWS / Azure / GCP</span></div>
-<div class="slide-stat"><span class="lbl">Migrations</span><span class="val">50+ Done</span></div>
+<h3 data-i18n="">Cloud Expertise</h3>
+<div class="slide-stat"><span class="lbl" data-i18n="">Cost Reduction</span><span class="val" data-i18n="">Up to 60%</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Uptime SLA</span><span class="val">99.99%</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Platforms</span><span class="val" data-i18n="">AWS / Azure / GCP</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Migrations</span><span class="val" data-i18n="">50+ Done</span></div>
 </div>
 </div>
 </div>
@@ -105,20 +117,20 @@
 <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');"></div>
 <div class="slide-inner">
 <div class="slide-content">
-<div class="slide-badge">Web &amp; Mobile Development</div>
-<h1>Beautiful <span class="accent">Websites &amp; Apps</span> Built to Perform</h1>
-<p>Custom websites, web apps, and mobile apps designed for speed, SEO, and user delight. Built to convert, not just to look pretty.</p>
+<div class="slide-badge" data-i18n="">Web &amp; Mobile Development</div>
+<h1 data-i18n="">Beautiful <span class="accent">Websites &amp; Apps</span> Built to Perform</h1>
+<p data-i18n="">Custom websites, web apps, and mobile apps designed for speed, SEO, and user delight. Built to convert, not just to look pretty.</p>
 <div class="slide-buttons">
-<a class="btn btn-primary" href="#contact">Build Your Site <span class="arrow">→</span></a>
-<a class="btn btn-outline" href="#portfolio">View Portfolio</a>
+<a class="btn btn-primary" href="#contact"><span data-i18n="">Build Your Site</span> <span class="arrow">→</span></a>
+<a class="btn btn-outline" data-i18n="" href="#portfolio">View Portfolio</a>
 </div>
 </div>
 <div class="slide-card">
-<h3>Development Stats</h3>
-<div class="slide-stat"><span class="lbl">Websites Built</span><span class="val">120+</span></div>
-<div class="slide-stat"><span class="lbl">Mobile Apps</span><span class="val">35+</span></div>
-<div class="slide-stat"><span class="lbl">Avg. Page Speed</span><span class="val">95+ / 100</span></div>
-<div class="slide-stat"><span class="lbl">Tech Stack</span><span class="val">React / Node / PHP</span></div>
+<h3 data-i18n="">Development Stats</h3>
+<div class="slide-stat"><span class="lbl" data-i18n="">Websites Built</span><span class="val">120+</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Mobile Apps</span><span class="val">35+</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Avg. Page Speed</span><span class="val">95+ / 100</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Tech Stack</span><span class="val" data-i18n="">React / Node / PHP</span></div>
 </div>
 </div>
 </div>
@@ -126,45 +138,45 @@
 <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');"></div>
 <div class="slide-inner">
 <div class="slide-content">
-<div class="slide-badge">AI &amp; Automation</div>
-<h1>Automate Your Workflow with <span class="accent">AI Solutions</span></h1>
-<p>Custom AI models, intelligent chatbots, and workflow automation that eliminate manual work and unlock new efficiencies.</p>
+<div class="slide-badge" data-i18n="">AI &amp; Automation</div>
+<h1 data-i18n="">Automate Your Workflow with <span class="accent">AI Solutions</span></h1>
+<p data-i18n="">Custom AI models, intelligent chatbots, and workflow automation that eliminate manual work and unlock new efficiencies.</p>
 <div class="slide-buttons">
-<a class="btn btn-primary" href="#contact">Explore AI <span class="arrow">→</span></a>
-<a class="btn btn-outline" href="#services">Our Services</a>
+<a class="btn btn-primary" href="#contact"><span data-i18n="">Explore AI</span> <span class="arrow">→</span></a>
+<a class="btn btn-outline" data-i18n="" href="#services">Our Services</a>
 </div>
 </div>
 <div class="slide-card">
-<h3>AI Capabilities</h3>
-<div class="slide-stat"><span class="lbl">Tickets Automated</span><span class="val">80%</span></div>
-<div class="slide-stat"><span class="lbl">Chatbots Deployed</span><span class="val">20+</span></div>
-<div class="slide-stat"><span class="lbl">Manual Work Saved</span><span class="val">1000+ hrs</span></div>
-<div class="slide-stat"><span class="lbl">Models</span><span class="val">LLM / ML / RPA</span></div>
+<h3 data-i18n="">AI Capabilities</h3>
+<div class="slide-stat"><span class="lbl" data-i18n="">Tickets Automated</span><span class="val">80%</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Chatbots Deployed</span><span class="val">20+</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Manual Work Saved</span><span class="val" data-i18n="">1000+ hrs</span></div>
+<div class="slide-stat"><span class="lbl" data-i18n="">Models</span><span class="val" data-i18n="">LLM / ML / RPA</span></div>
 </div>
 </div>
 </div>
 <div class="carousel-nav">
-<button aria-label="Previous slide" class="carousel-arrow" id="prevSlide">‹</button>
+<button aria-label="Previous slide" class="carousel-arrow" data-i18n-attrs="aria-label" id="prevSlide">‹</button>
 <div class="carousel-dots" id="carouselDots"></div>
-<button aria-label="Next slide" class="carousel-arrow" id="nextSlide">›</button>
+<button aria-label="Next slide" class="carousel-arrow" data-i18n-attrs="aria-label" id="nextSlide">›</button>
 </div>
 </section>
 <!-- ================= MARQUEE ================= -->
 <div class="services-marquee">
 <div class="marquee-content">
-<span class="marquee-item"><span class="icon-badge">💻</span> Web Development <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">☁️</span> Cloud &amp; Hosting <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">🔒</span> Cybersecurity <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">🛠️</span> Technical Support <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">📊</span> Data &amp; Analytics <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">⚙️</span> Automation &amp; RPA <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">🤖</span> AI &amp; Machine Learning <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">📱</span> Mobile Apps <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">📈</span> SEO &amp; Marketing <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">🏢</span> ERP &amp; CRM <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">🎨</span> UI/UX Design <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">💡</span> IT Consulting <span class="dot"></span></span>
-<span class="marquee-item"><span class="icon-badge">🎯</span> Graphic Design <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">💻</span> <span data-i18n="">Web Development</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">☁️</span> <span data-i18n="">Cloud &amp; Hosting</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">🔒</span> <span data-i18n="">Cybersecurity</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">🛠️</span> <span data-i18n="">Technical Support</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">📊</span> <span data-i18n="">Data &amp; Analytics</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">⚙️</span> <span data-i18n="">Automation &amp; RPA</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">🤖</span> <span data-i18n="">AI &amp; Machine Learning</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">📱</span> <span data-i18n="">Mobile Apps</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">📈</span> <span data-i18n="">SEO &amp; Marketing</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">🏢</span> <span data-i18n="">ERP &amp; CRM</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">🎨</span> <span data-i18n="">UI/UX Design</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">💡</span> <span data-i18n="">IT Consulting</span> <span class="dot"></span></span>
+<span class="marquee-item"><span class="icon-badge">🎯</span> <span data-i18n="">Graphic Design</span> <span class="dot"></span></span>
 </div>
 </div>
 <!-- ================= ABOUT ================= -->
@@ -199,31 +211,31 @@
 <div class="container">
 <div class="about-grid">
 <div class="about-image-wrap reveal reveal-left">
-<div class="about-image-badge">12+ Years Exp.</div>
-<img alt="Mohammad Farooq — IT specialist" onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=900&amp;q=80'" src="./images/MF2.jpg"/>
+<div class="about-image-badge" data-i18n="">12+ Years Exp.</div>
+<img alt="Mohammad Farooq — IT specialist" data-i18n-attrs="alt" onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=900&amp;q=80'" src="./images/MF2.jpg"/>
 <div class="about-image-overlay">
 <div>
-<h3>Mohammad Farooq</h3>
-<p>Full stack Developer — Riyadh, Saudi Arabia</p>
+<h3 data-i18n="">Mohammad Farooq</h3>
+<p data-i18n="">Full stack Developer — Riyadh, Saudi Arabia</p>
 </div>
 </div>
 </div>
 <div class="about-text reveal reveal-right">
-<span class="eyebrow" style="display:inline-block;color:var(--primary);font-weight:700;text-transform:uppercase;letter-spacing:3px;font-size:0.78rem;margin-bottom:16px;padding:6px 16px;background:rgba(59,130,246,0.08);border-radius:20px;">About Myself</span>
-<h2>Turning Ideas into <span class="grad">Digital Reality</span></h2>
-<p>I'm Mohammad Farooq Deen Mohammad — a professional with expertise in website development, graphic design, and content writing. With more than 12 years of experience, I've completed my Master's and Bachelor's degrees in Information Technology (MCA &amp; BCA).</p>
-<p>I specialize in website and mobile UI/UX design and development, with a strong focus on user problems and genuine design solutions. I've worked on CRM systems, mobile apps, and web apps across multiple industries.</p>
+<span class="eyebrow" data-i18n="" style="display:inline-block;color:var(--primary);font-weight:700;text-transform:uppercase;letter-spacing:3px;font-size:0.78rem;margin-bottom:16px;padding:6px 16px;background:rgba(59,130,246,0.08);border-radius:20px;">About Myself</span>
+<h2 data-i18n="">Turning Ideas into <span class="grad">Digital Reality</span></h2>
+<p data-i18n="">I'm Mohammad Farooq Deen Mohammad — a professional with expertise in website development, graphic design, and content writing. With more than 12 years of experience, I've completed my Master's and Bachelor's degrees in Information Technology (MCA &amp; BCA).</p>
+<p data-i18n="">I specialize in website and mobile UI/UX design and development, with a strong focus on user problems and genuine design solutions. I've worked on CRM systems, mobile apps, and web apps across multiple industries.</p>
 <div class="about-credentials">
-<div class="cred-item"><span class="ic">🎓</span> MCA — Master of Computer Application</div>
-<div class="cred-item"><span class="ic">🎓</span> BCA — Bachelor of Computer Application</div>
-<div class="cred-item"><span class="ic">🏆</span> Java Certification — CMC (TATA)</div>
-<div class="cred-item"><span class="ic">⭐</span> Grade A++ Merit Diploma</div>
+<div class="cred-item"><span class="ic">🎓</span> <span data-i18n="">MCA — Master of Computer Application</span></div>
+<div class="cred-item"><span class="ic">🎓</span> <span data-i18n="">BCA — Bachelor of Computer Application</span></div>
+<div class="cred-item"><span class="ic">🏆</span> <span data-i18n="">Java Certification — CMC (TATA)</span></div>
+<div class="cred-item"><span class="ic">⭐</span> <span data-i18n="">Grade A++ Merit Diploma</span></div>
 </div>
 <ul class="feature-list">
-<li>12+ years in website development &amp; UI/UX design</li>
-<li>Creative analytical thinker with strong troubleshooting skills</li>
-<li>Good organization and attention to detail on every project</li>
-<li>Currently Senior Software Development Specialist at Maharah Human Resources, Riyadh</li>
+<li data-i18n="">12+ years in website development &amp; UI/UX design</li>
+<li data-i18n="">Creative analytical thinker with strong troubleshooting skills</li>
+<li data-i18n="">Good organization and attention to detail on every project</li>
+<li data-i18n="">Currently Senior Software Development Specialist at Maharah Human Resources, Riyadh</li>
 </ul>
 <div class="skill-tags">
 <span class="skill-tag">PHP</span>
@@ -247,7 +259,6 @@
 </div>
 </div>
 </section>
-
 <!-- ================= SERVICES ================= -->
 <section class="section-3d" id="services">
 <div class="bg-layer">
@@ -273,180 +284,177 @@
 </div>
 <div class="container">
 <div class="section-head reveal">
-<span class="eyebrow">What I Offer</span>
-<h2>Complete IT Services</h2>
-<p>End-to-end technology solutions tailored to your business needs.</p>
+<span class="eyebrow" data-i18n="">What I Offer</span>
+<h2 data-i18n="">Complete IT Services</h2>
+<p data-i18n="">End-to-end technology solutions tailored to your business needs.</p>
 </div>
 <div class="services-grid">
 <div class="service-card reveal">
-<img class="service-img" src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=600&q=80" alt="Web Development"/>
+<img alt="Web Development" class="service-img" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
 <div class="service-icon">💻</div>
-<h3>Web Development</h3>
-<p>Fast, responsive, SEO-friendly websites and web applications built with modern frameworks.</p>
+<h3 data-i18n="">Web Development</h3>
+<p data-i18n="">Fast, responsive, SEO-friendly websites and web applications built with modern frameworks.</p>
 </div>
 <div class="service-card reveal">
-<img class="service-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Mobile Apps"/>
+<img alt="Mobile Apps" class="service-img" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
 <div class="service-icon">📱</div>
-<h3>Mobile App Development</h3>
-<p>Native and cross-platform mobile apps for iOS and Android that deliver seamless user experiences.</p>
+<h3 data-i18n="">Mobile App Development</h3>
+<p data-i18n="">Native and cross-platform mobile apps for iOS and Android that deliver seamless user experiences.</p>
 </div>
 <div class="service-card reveal">
-<img class="service-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="Cloud Solutions"/>
+<img alt="Cloud Solutions" class="service-img" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
 <div class="service-icon">☁️</div>
-<h3>Cloud &amp; Hosting</h3>
-<p>Scalable cloud infrastructure, migration, and managed hosting on AWS, Azure, and Google Cloud.</p>
+<h3 data-i18n="">Cloud &amp; Hosting</h3>
+<p data-i18n="">Scalable cloud infrastructure, migration, and managed hosting on AWS, Azure, and Google Cloud.</p>
 </div>
 <div class="service-card reveal">
-<img class="service-img" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80" alt="Cybersecurity"/>
+<img alt="Cybersecurity" class="service-img" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
 <div class="service-icon">🔒</div>
-<h3>Cybersecurity</h3>
-<p>Security audits, threat detection, penetration testing, and compliance to keep your data safe.</p>
+<h3 data-i18n="">Cybersecurity</h3>
+<p data-i18n="">Security audits, threat detection, penetration testing, and compliance to keep your data safe.</p>
 </div>
 <div class="service-card reveal">
-<img class="service-img" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80" alt="AI & Automation"/>
+<img alt="AI &amp; Automation" class="service-img" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
 <div class="service-icon">🤖</div>
-<h3>AI &amp; Automation</h3>
-<p>Custom AI models, intelligent chatbots, and workflow automation to eliminate manual work.</p>
+<h3 data-i18n="">AI &amp; Automation</h3>
+<p data-i18n="">Custom AI models, intelligent chatbots, and workflow automation to eliminate manual work.</p>
 </div>
 <div class="service-card reveal">
-<img class="service-img" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="UI/UX Design"/>
+<img alt="UI/UX Design" class="service-img" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
 <div class="service-icon">🎨</div>
-<h3>UI/UX Design</h3>
-<p>User-centered design that solves real problems — from wireframes to polished interfaces.</p>
+<h3 data-i18n="">UI/UX Design</h3>
+<p data-i18n="">User-centered design that solves real problems — from wireframes to polished interfaces.</p>
 </div>
 </div>
 </div>
 </section>
-
 <!-- ================= MORE DETAILS ================= -->
 <section id="more-details">
 <div class="container">
 <div class="section-head reveal">
-<span class="eyebrow">Deep Dive</span>
-<h2>More Details</h2>
-<p>Explore how I approach each service area to deliver measurable results.</p>
+<span class="eyebrow" data-i18n="">Deep Dive</span>
+<h2 data-i18n="">More Details</h2>
+<p data-i18n="">Explore how I approach each service area to deliver measurable results.</p>
 </div>
 <div class="detail-block reveal">
 <div class="detail-img">
-<span class="badge">Development</span>
-<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Web Development"/>
+<span class="badge" data-i18n="">Development</span>
+<img alt="Web Development" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 </div>
 <div class="detail-text">
-<h3><span class="grad">Web Development</span> That Converts</h3>
-<p>I build websites and web applications that are not only visually stunning but also engineered for performance, SEO, and conversions.</p>
+<h3 data-i18n=""><span class="grad">Web Development</span> That Converts</h3>
+<p data-i18n="">I build websites and web applications that are not only visually stunning but also engineered for performance, SEO, and conversions.</p>
 <ul class="detail-features">
-<li>Responsive design for all devices</li>
-<li>Core Web Vitals optimization</li>
-<li>CMS integration (WordPress, custom)</li>
-<li>E-commerce and payment gateway setup</li>
-<li>Ongoing maintenance and support</li>
+<li data-i18n="">Responsive design for all devices</li>
+<li data-i18n="">Core Web Vitals optimization</li>
+<li data-i18n="">CMS integration (WordPress, custom)</li>
+<li data-i18n="">E-commerce and payment gateway setup</li>
+<li data-i18n="">Ongoing maintenance and support</li>
 </ul>
 </div>
 </div>
 <div class="detail-block reveal">
 <div class="detail-img">
-<span class="badge">Cloud</span>
-<img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Cloud Infrastructure"/>
+<span class="badge" data-i18n="">Cloud</span>
+<img alt="Cloud Infrastructure" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 </div>
 <div class="detail-text">
-<h3><span class="grad">Cloud Infrastructure</span> Done Right</h3>
-<p>Whether you're migrating to the cloud or optimizing existing infrastructure, I ensure reliability, security, and cost efficiency.</p>
+<h3 data-i18n=""><span class="grad">Cloud Infrastructure</span> Done Right</h3>
+<p data-i18n="">Whether you're migrating to the cloud or optimizing existing infrastructure, I ensure reliability, security, and cost efficiency.</p>
 <ul class="detail-features">
-<li>AWS, Azure, Google Cloud expertise</li>
-<li>Zero-downtime migrations</li>
-<li>Auto-scaling and load balancing</li>
-<li>CI/CD pipeline setup</li>
-<li>Cost optimization and monitoring</li>
+<li data-i18n="">AWS, Azure, Google Cloud expertise</li>
+<li data-i18n="">Zero-downtime migrations</li>
+<li data-i18n="">Auto-scaling and load balancing</li>
+<li data-i18n="">CI/CD pipeline setup</li>
+<li data-i18n="">Cost optimization and monitoring</li>
 </ul>
 </div>
 </div>
 <div class="detail-block reveal">
 <div class="detail-img">
-<span class="badge">Security</span>
-<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cybersecurity"/>
+<span class="badge" data-i18n="">Security</span>
+<img alt="Cybersecurity" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 </div>
 <div class="detail-text">
-<h3><span class="grad">Enterprise Security</span> &amp; Compliance</h3>
-<p>Protect your business from modern cyber threats with comprehensive security assessments and proactive defense strategies.</p>
+<h3 data-i18n=""><span class="grad">Enterprise Security</span> &amp; Compliance</h3>
+<p data-i18n="">Protect your business from modern cyber threats with comprehensive security assessments and proactive defense strategies.</p>
 <ul class="detail-features">
-<li>Security audits and penetration testing</li>
-<li>Threat detection and incident response</li>
-<li>Firewall and network security setup</li>
-<li>Compliance readiness (ISO, GDPR)</li>
-<li>Security awareness training</li>
+<li data-i18n="">Security audits and penetration testing</li>
+<li data-i18n="">Threat detection and incident response</li>
+<li data-i18n="">Firewall and network security setup</li>
+<li data-i18n="">Compliance readiness (ISO, GDPR)</li>
+<li data-i18n="">Security awareness training</li>
 </ul>
 </div>
 </div>
 <div class="detail-block reveal">
 <div class="detail-img">
-<span class="badge">AI</span>
-<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="AI Solutions"/>
+<span class="badge" data-i18n="">AI</span>
+<img alt="AI Solutions" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 </div>
 <div class="detail-text">
-<h3><span class="grad">AI &amp; Automation</span> Solutions</h3>
-<p>Leverage the power of artificial intelligence to streamline operations, reduce costs, and create new business opportunities.</p>
+<h3 data-i18n=""><span class="grad">AI &amp; Automation</span> Solutions</h3>
+<p data-i18n="">Leverage the power of artificial intelligence to streamline operations, reduce costs, and create new business opportunities.</p>
 <ul class="detail-features">
-<li>Custom AI models for your business</li>
-<li>Intelligent chatbots and virtual assistants</li>
-<li>Workflow and process automation</li>
-<li>Data analysis and predictive insights</li>
-<li>Seamless integration with existing systems</li>
+<li data-i18n="">Custom AI models for your business</li>
+<li data-i18n="">Intelligent chatbots and virtual assistants</li>
+<li data-i18n="">Workflow and process automation</li>
+<li data-i18n="">Data analysis and predictive insights</li>
+<li data-i18n="">Seamless integration with existing systems</li>
 </ul>
 </div>
 </div>
 </div>
 </section>
-
 <!-- ================= WHY CHOOSE US ================= -->
 <section id="why-us">
 <div class="container">
 <div class="section-head reveal">
-<span class="eyebrow">Why Work With Me</span>
-<h2>Your Success is My Priority</h2>
-<p>Here's what sets me apart from the rest.</p>
+<span class="eyebrow" data-i18n="">Why Work With Me</span>
+<h2 data-i18n="">Your Success is My Priority</h2>
+<p data-i18n="">Here's what sets me apart from the rest.</p>
 </div>
 <div class="why-grid">
 <div class="why-card reveal">
 <div class="why-icon">⚡</div>
-<h3>Fast Turnaround</h3>
-<p>I deliver projects on time, every time — without compromising on quality.</p>
+<h3 data-i18n="">Fast Turnaround</h3>
+<p data-i18n="">I deliver projects on time, every time — without compromising on quality.</p>
 </div>
 <div class="why-card reveal">
 <div class="why-icon">🎯</div>
-<h3>Results-Driven</h3>
-<p>Every solution is designed to achieve measurable business outcomes.</p>
+<h3 data-i18n="">Results-Driven</h3>
+<p data-i18n="">Every solution is designed to achieve measurable business outcomes.</p>
 </div>
 <div class="why-card reveal">
 <div class="why-icon">💎</div>
-<h3>Premium Quality</h3>
-<p>I use the latest technologies and best practices to ensure excellence.</p>
+<h3 data-i18n="">Premium Quality</h3>
+<p data-i18n="">I use the latest technologies and best practices to ensure excellence.</p>
 </div>
 <div class="why-card reveal">
 <div class="why-icon">🤝</div>
-<h3>Dedicated Support</h3>
-<p>Get 24/7 support and maintenance for peace of mind.</p>
+<h3 data-i18n="">Dedicated Support</h3>
+<p data-i18n="">Get 24/7 support and maintenance for peace of mind.</p>
 </div>
 <div class="why-card reveal">
 <div class="why-icon">🔒</div>
-<h3>Security First</h3>
-<p>Security is baked into every layer of your project from the start.</p>
+<h3 data-i18n="">Security First</h3>
+<p data-i18n="">Security is baked into every layer of your project from the start.</p>
 </div>
 <div class="why-card reveal">
 <div class="why-icon">📈</div>
-<h3>Scalable Solutions</h3>
-<p>Built to grow with your business — no need to rebuild later.</p>
+<h3 data-i18n="">Scalable Solutions</h3>
+<p data-i18n="">Built to grow with your business — no need to rebuild later.</p>
 </div>
 </div>
 </div>
 </section>
-
 <!-- ================= TECH STACK ================= -->
 <section id="tech-stack">
 <div class="container">
 <div class="section-head reveal">
-<span class="eyebrow">My Toolkit</span>
-<h2>Technologies I Master</h2>
-<p>Modern tools and frameworks for future-proof solutions.</p>
+<span class="eyebrow" data-i18n="">My Toolkit</span>
+<h2 data-i18n="">Technologies I Master</h2>
+<p data-i18n="">Modern tools and frameworks for future-proof solutions.</p>
 </div>
 <div class="tech-grid">
 <div class="tech-item reveal"><span class="tech-icon">⚛️</span><h4>React</h4></div>
@@ -464,425 +472,415 @@
 </div>
 </div>
 </section>
-
 <!-- ================= STATS ================= -->
 <section id="stats">
 <div class="container">
 <div class="stats-grid">
 <div class="stat-box reveal">
 <span class="stat-num" data-count="120">0</span>
-<span class="stat-label">Projects Delivered</span>
+<span class="stat-label" data-i18n="">Projects Delivered</span>
 </div>
 <div class="stat-box reveal">
 <span class="stat-num" data-count="12">0</span>
-<span class="stat-label">Years Experience</span>
+<span class="stat-label" data-i18n="">Years Experience</span>
 </div>
 <div class="stat-box reveal">
 <span class="stat-num" data-count="98">0</span>
-<span class="stat-label">% Client Satisfaction</span>
+<span class="stat-label" data-i18n="">% Client Satisfaction</span>
 </div>
 <div class="stat-box reveal">
 <span class="stat-num" data-count="50">0</span>
-<span class="stat-label">Cloud Migrations</span>
+<span class="stat-label" data-i18n="">Cloud Migrations</span>
 </div>
 </div>
 </div>
 </section>
-
 <!-- ================= PROCESS ================= -->
 <section id="process">
 <div class="container">
 <div class="section-head reveal">
-<span class="eyebrow">How I Work</span>
-<h2>My Process</h2>
-<p>A proven approach that ensures your project is delivered on time and on budget.</p>
+<span class="eyebrow" data-i18n="">How I Work</span>
+<h2 data-i18n="">My Process</h2>
+<p data-i18n="">A proven approach that ensures your project is delivered on time and on budget.</p>
 </div>
 <div class="process-grid">
 <div class="process-step reveal" data-step="01">
 <div class="process-icon">🔍</div>
-<h3>Discover</h3>
-<p>We discuss your goals, challenges, and vision to understand exactly what you need.</p>
+<h3 data-i18n="">Discover</h3>
+<p data-i18n="">We discuss your goals, challenges, and vision to understand exactly what you need.</p>
 </div>
 <div class="process-step reveal" data-step="02">
 <div class="process-icon">📐</div>
-<h3>Design</h3>
-<p>I create wireframes, prototypes, and design mockups for your approval before development.</p>
+<h3 data-i18n="">Design</h3>
+<p data-i18n="">I create wireframes, prototypes, and design mockups for your approval before development.</p>
 </div>
 <div class="process-step reveal" data-step="03">
 <div class="process-icon">⚙️</div>
-<h3>Develop</h3>
-<p>Using the latest technologies, I build your solution with clean, maintainable code.</p>
+<h3 data-i18n="">Develop</h3>
+<p data-i18n="">Using the latest technologies, I build your solution with clean, maintainable code.</p>
 </div>
 <div class="process-step reveal" data-step="04">
 <div class="process-icon">🚀</div>
-<h3>Deliver &amp; Support</h3>
-<p>I launch your project and provide ongoing support, maintenance, and improvements.</p>
+<h3 data-i18n="">Deliver &amp; Support</h3>
+<p data-i18n="">I launch your project and provide ongoing support, maintenance, and improvements.</p>
 </div>
 </div>
 </div>
 </section>
-
 <!-- ================= PORTFOLIO ================= -->
 <section id="portfolio">
 <div class="container">
 <div class="section-head reveal">
-<span class="eyebrow">Recent Work</span>
-<h2>Portfolio</h2>
-<p>A selection of projects that showcase my capabilities.</p>
+<span class="eyebrow" data-i18n="">Recent Work</span>
+<h2 data-i18n="">Portfolio</h2>
+<p data-i18n="">A selection of projects that showcase my capabilities.</p>
 </div>
 <div class="portfolio-grid">
 <a class="portfolio-item reveal" href="#">
-<img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" alt="E-commerce Platform"/>
+<img alt="E-commerce Platform" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <div class="portfolio-overlay">
-<span class="tag">Web Development</span>
-<h3>E-commerce Platform</h3>
-<p>Full-featured online store with payment integration and inventory management.</p>
+<span class="tag" data-i18n="">Web Development</span>
+<h3 data-i18n="">E-commerce Platform</h3>
+<p data-i18n="">Full-featured online store with payment integration and inventory management.</p>
 </div>
 </a>
 <a class="portfolio-item reveal" href="#">
-<img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80" alt="Mobile Banking App"/>
+<img alt="Mobile Banking App" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <div class="portfolio-overlay">
-<span class="tag">Mobile App</span>
-<h3>Mobile Banking App</h3>
-<p>Secure, user-friendly banking app with biometric authentication.</p>
+<span class="tag" data-i18n="">Mobile App</span>
+<h3 data-i18n="">Mobile Banking App</h3>
+<p data-i18n="">Secure, user-friendly banking app with biometric authentication.</p>
 </div>
 </a>
 <a class="portfolio-item reveal" href="#">
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Analytics Dashboard"/>
+<img alt="Analytics Dashboard" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <div class="portfolio-overlay">
-<span class="tag">Data &amp; Analytics</span>
-<h3>Analytics Dashboard</h3>
-<p>Real-time business intelligence dashboard with custom reporting.</p>
+<span class="tag" data-i18n="">Data &amp; Analytics</span>
+<h3 data-i18n="">Analytics Dashboard</h3>
+<p data-i18n="">Real-time business intelligence dashboard with custom reporting.</p>
 </div>
 </a>
 <a class="portfolio-item reveal" href="#">
-<img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80" alt="SaaS Platform"/>
+<img alt="SaaS Platform" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <div class="portfolio-overlay">
-<span class="tag">Cloud Solution</span>
-<h3>SaaS Platform</h3>
-<p>Multi-tenant SaaS platform with subscription billing and analytics.</p>
+<span class="tag" data-i18n="">Cloud Solution</span>
+<h3 data-i18n="">SaaS Platform</h3>
+<p data-i18n="">Multi-tenant SaaS platform with subscription billing and analytics.</p>
 </div>
 </a>
 <a class="portfolio-item reveal" href="#">
-<img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?auto=format&fit=crop&w=800&q=80" alt="AI Chatbot"/>
+<img alt="AI Chatbot" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <div class="portfolio-overlay">
-<span class="tag">AI &amp; Automation</span>
-<h3>AI Chatbot</h3>
-<p>Intelligent customer service chatbot handling 80% of queries automatically.</p>
+<span class="tag" data-i18n="">AI &amp; Automation</span>
+<h3 data-i18n="">AI Chatbot</h3>
+<p data-i18n="">Intelligent customer service chatbot handling 80% of queries automatically.</p>
 </div>
 </a>
 <a class="portfolio-item reveal" href="#">
-<img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80" alt="Brand Identity"/>
+<img alt="Brand Identity" data-i18n-attrs="alt" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <div class="portfolio-overlay">
-<span class="tag figma">UI/UX Design</span>
-<h3>Brand Identity</h3>
-<p>Complete visual identity and UI kit for a fintech startup.</p>
+<span class="tag figma" data-i18n="">UI/UX Design</span>
+<h3 data-i18n="">Brand Identity</h3>
+<p data-i18n="">Complete visual identity and UI kit for a fintech startup.</p>
 </div>
 </a>
 </div>
 <div class="portfolio-cta reveal">
-<a class="btn btn-primary" href="#contact">Start Your Project <span class="arrow">→</span></a>
-<a class="btn btn-figma" href="#">View Figma Files</a>
+<a class="btn btn-primary" href="#contact"><span data-i18n="">Start Your Project</span> <span class="arrow">→</span></a>
+<a class="btn btn-figma" data-i18n="" href="#">View Figma Files</a>
 </div>
 </div>
 </section>
-
 <!-- ================= GUARANTEE ================= -->
 <section id="guarantee">
 <div class="container">
 <div class="guarantee-wrap">
 <div class="guarantee-text reveal">
-<h2>My 100% Satisfaction Guarantee</h2>
-<p>I stand behind every project I deliver. If you're not completely satisfied, I'll work with you until you are.</p>
+<h2 data-i18n="">My 100% Satisfaction Guarantee</h2>
+<p data-i18n="">I stand behind every project I deliver. If you're not completely satisfied, I'll work with you until you are.</p>
 <ul class="guarantee-list">
-<li>100% money-back guarantee if not satisfied</li>
-<li>Unlimited revisions until you're happy</li>
-<li>On-time delivery, every time</li>
-<li>Post-launch support included</li>
-<li>Confidentiality and NDA protection</li>
+<li data-i18n="">100% money-back guarantee if not satisfied</li>
+<li data-i18n="">Unlimited revisions until you're happy</li>
+<li data-i18n="">On-time delivery, every time</li>
+<li data-i18n="">Post-launch support included</li>
+<li data-i18n="">Confidentiality and NDA protection</li>
 </ul>
 </div>
 <div class="guarantee-visual reveal">
 <div class="guarantee-badge">🛡</div>
-<h3>Your Success, Guaranteed</h3>
-<p>I'm committed to delivering exceptional results that exceed your expectations.</p>
+<h3 data-i18n="">Your Success, Guaranteed</h3>
+<p data-i18n="">I'm committed to delivering exceptional results that exceed your expectations.</p>
 </div>
 </div>
 </div>
 </section>
-
 <!-- ================= GLOBAL PRESENCE ================= -->
 <section id="global-presence">
 <div class="container">
 <div class="section-head reveal">
-<span class="eyebrow">Global Reach</span>
-<h2>Where I Work</h2>
-<p>Serving clients worldwide from Riyadh, Saudi Arabia.</p>
+<span class="eyebrow" data-i18n="">Global Reach</span>
+<h2 data-i18n="">Where I Work</h2>
+<p data-i18n="">Serving clients worldwide from Riyadh, Saudi Arabia.</p>
 </div>
 <div class="global-grid">
 <div class="global-item reveal">
 <span class="global-flag">🇸🇦</span>
-<h3>Saudi Arabia</h3>
-<p>Riyadh — Headquarters</p>
+<h3 data-i18n="">Saudi Arabia</h3>
+<p data-i18n="">Riyadh — Headquarters</p>
 </div>
 <div class="global-item reveal">
 <span class="global-flag">🇦🇪</span>
-<h3>UAE</h3>
-<p>Dubai — Clients</p>
+<h3 data-i18n="">UAE</h3>
+<p data-i18n="">Dubai — Clients</p>
 </div>
 <div class="global-item reveal">
 <span class="global-flag">🇮🇳</span>
-<h3>India</h3>
-<p>Development Hub</p>
+<h3 data-i18n="">India</h3>
+<p data-i18n="">Development Hub</p>
 </div>
 <div class="global-item reveal">
 <span class="global-flag">🇬🇧</span>
-<h3>UK</h3>
-<p>European Clients</p>
+<h3 data-i18n="">UK</h3>
+<p data-i18n="">European Clients</p>
 </div>
 <div class="global-item reveal">
 <span class="global-flag">🇺🇸</span>
-<h3>USA</h3>
-<p>North America Clients</p>
+<h3 data-i18n="">USA</h3>
+<p data-i18n="">North America Clients</p>
 </div>
 </div>
 </div>
 </section>
-
 <!-- ================= NEWSLETTER ================= -->
 <section id="newsletter">
 <div class="newsletter-wrap">
-<h2>Stay Ahead of the Curve</h2>
-<p>Get the latest IT tips, trends, and exclusive offers delivered to your inbox.</p>
+<h2 data-i18n="">Stay Ahead of the Curve</h2>
+<p data-i18n="">Get the latest IT tips, trends, and exclusive offers delivered to your inbox.</p>
 <form class="newsletter-form" id="newsletterForm">
-<input type="email" id="newsletterEmail" placeholder="Enter your email address" required/>
-<button type="submit" class="btn btn-primary">Subscribe</button>
+<input data-i18n-attrs="placeholder" id="newsletterEmail" placeholder="Enter your email address" required="" type="email"/>
+<button class="btn btn-primary" data-i18n="" type="submit">Subscribe</button>
 </form>
 <div class="newsletter-status" id="newsletterStatus"></div>
 </div>
 </section>
-
 <!-- ================= TESTIMONIALS ================= -->
 <section id="testimonials">
 <div class="container">
 <div class="section-head dark reveal">
-<span class="eyebrow">Testimonials</span>
-<h2>What Clients Say</h2>
-<p>Real feedback from real clients.</p>
+<span class="eyebrow" data-i18n="">Testimonials</span>
+<h2 data-i18n="">What Clients Say</h2>
+<p data-i18n="">Real feedback from real clients.</p>
 </div>
 <div class="testimonials-carousel">
 <div class="testimonials-track" id="testimonialsTrack">
 <div class="testimonial-card">
 <div class="testimonial-stars">★★★★★</div>
-<p class="testimonial-text">"Mohammad delivered our e-commerce platform ahead of schedule. His attention to detail and technical expertise are unmatched."</p>
+<p class="testimonial-text" data-i18n="">"Mohammad delivered our e-commerce platform ahead of schedule. His attention to detail and technical expertise are unmatched."</p>
 <div class="testimonial-author">
-<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmed Al-Rashid"/>
-<div><h4>Ahmed Al-Rashid</h4><p>CEO, TechMart Saudi</p></div>
+<img alt="Ahmed Al-Rashid" data-i18n-attrs="alt" src="https://randomuser.me/api/portraits/men/32.jpg"/>
+<div><h4 data-i18n="">Ahmed Al-Rashid</h4><p data-i18n="">CEO, TechMart Saudi</p></div>
 </div>
 </div>
 <div class="testimonial-card">
 <div class="testimonial-stars">★★★★★</div>
-<p class="testimonial-text">"Working with Mohammad on our cloud migration was seamless. He saved us 40% on infrastructure costs with zero downtime."</p>
+<p class="testimonial-text" data-i18n="">"Working with Mohammad on our cloud migration was seamless. He saved us 40% on infrastructure costs with zero downtime."</p>
 <div class="testimonial-author">
-<img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson"/>
-<div><h4>Sarah Johnson</h4><p>CTO, Innovate UK</p></div>
+<img alt="Sarah Johnson" data-i18n-attrs="alt" src="https://randomuser.me/api/portraits/women/44.jpg"/>
+<div><h4 data-i18n="">Sarah Johnson</h4><p data-i18n="">CTO, Innovate UK</p></div>
 </div>
 </div>
 <div class="testimonial-card">
 <div class="testimonial-stars">★★★★★</div>
-<p class="testimonial-text">"The AI chatbot Mohammad built handles 80% of our customer queries. Our support team can finally focus on complex issues."</p>
+<p class="testimonial-text" data-i18n="">"The AI chatbot Mohammad built handles 80% of our customer queries. Our support team can finally focus on complex issues."</p>
 <div class="testimonial-author">
-<img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Rajesh Kumar"/>
-<div><h4>Rajesh Kumar</h4><p>Operations Manager, SupportAI</p></div>
+<img alt="Rajesh Kumar" data-i18n-attrs="alt" src="https://randomuser.me/api/portraits/men/67.jpg"/>
+<div><h4 data-i18n="">Rajesh Kumar</h4><p data-i18n="">Operations Manager, SupportAI</p></div>
 </div>
 </div>
 <div class="testimonial-card">
 <div class="testimonial-stars">★★★★★</div>
-<p class="testimonial-text">"Our mobile banking app is fast, secure, and beautifully designed. Mohammad understood our compliance requirements perfectly."</p>
+<p class="testimonial-text" data-i18n="">"Our mobile banking app is fast, secure, and beautifully designed. Mohammad understood our compliance requirements perfectly."</p>
 <div class="testimonial-author">
-<img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Fatima Hassan"/>
-<div><h4>Fatima Hassan</h4><p>Product Lead, Gulf Bank</p></div>
+<img alt="Fatima Hassan" data-i18n-attrs="alt" src="https://randomuser.me/api/portraits/women/68.jpg"/>
+<div><h4 data-i18n="">Fatima Hassan</h4><p data-i18n="">Product Lead, Gulf Bank</p></div>
 </div>
 </div>
 <div class="testimonial-card">
 <div class="testimonial-stars">★★★★★</div>
-<p class="testimonial-text">"From concept to launch, Mohammad was professional and responsive. The design exceeded our expectations."</p>
+<p class="testimonial-text" data-i18n="">"From concept to launch, Mohammad was professional and responsive. The design exceeded our expectations."</p>
 <div class="testimonial-author">
-<img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Michael Chen"/>
-<div><h4>Michael Chen</h4><p>Founder, StartupHub</p></div>
+<img alt="Michael Chen" data-i18n-attrs="alt" src="https://randomuser.me/api/portraits/men/85.jpg"/>
+<div><h4 data-i18n="">Michael Chen</h4><p data-i18n="">Founder, StartupHub</p></div>
 </div>
 </div>
 </div>
 <div class="testimonials-nav">
-<button class="testimonial-arrow" id="prevTestimonial" aria-label="Previous">‹</button>
+<button aria-label="Previous" class="testimonial-arrow" data-i18n-attrs="aria-label" id="prevTestimonial">‹</button>
 <div class="testimonial-dots" id="testimonialDots"></div>
-<button class="testimonial-arrow" id="nextTestimonial" aria-label="Next">›</button>
+<button aria-label="Next" class="testimonial-arrow" data-i18n-attrs="aria-label" id="nextTestimonial">›</button>
 </div>
 </div>
 </div>
 </section>
-
 <!-- ================= PRICING ================= -->
 <section id="pricing">
 <div class="container">
 <div class="section-head dark reveal">
-<span class="eyebrow">Pricing Plans</span>
-<h2>Choose Your Package</h2>
-<p>Transparent pricing, no hidden fees. Pick the plan that fits your needs.</p>
+<span class="eyebrow" data-i18n="">Pricing Plans</span>
+<h2 data-i18n="">Choose Your Package</h2>
+<p data-i18n="">Transparent pricing, no hidden fees. Pick the plan that fits your needs.</p>
 </div>
 <div class="pricing-grid">
 <div class="pricing-card reveal">
 <div class="pricing-icon">🚀</div>
-<h3>Starter</h3>
-<p class="subtitle">Perfect for small projects</p>
+<h3 data-i18n="">Starter</h3>
+<p class="subtitle" data-i18n="">Perfect for small projects</p>
 <div class="pricing-price">
 <span class="currency">$</span>
 <span class="amount">499</span>
-<span class="period">/project</span>
+<span class="period" data-i18n="">/project</span>
 </div>
 <ul class="pricing-features">
-<li>5-page responsive website</li>
-<li>Basic SEO setup</li>
-<li>Contact form integration</li>
-<li>1 month free support</li>
-<li>30-day delivery</li>
+<li data-i18n="">5-page responsive website</li>
+<li data-i18n="">Basic SEO setup</li>
+<li data-i18n="">Contact form integration</li>
+<li data-i18n="">1 month free support</li>
+<li data-i18n="">30-day delivery</li>
 </ul>
-<a href="#contact" class="pricing-btn outline">Get Started</a>
+<a class="pricing-btn outline" data-i18n="" href="#contact">Get Started</a>
 </div>
 <div class="pricing-card featured reveal">
-<div class="pricing-badge">Most Popular</div>
+<div class="pricing-badge" data-i18n="">Most Popular</div>
 <div class="pricing-icon">💎</div>
-<h3>Professional</h3>
-<p class="subtitle">For growing businesses</p>
+<h3 data-i18n="">Professional</h3>
+<p class="subtitle" data-i18n="">For growing businesses</p>
 <div class="pricing-price">
 <span class="currency">$</span>
 <span class="amount">1,499</span>
-<span class="period">/project</span>
+<span class="period" data-i18n="">/project</span>
 </div>
 <ul class="pricing-features">
-<li>Custom web application</li>
-<li>Full SEO optimization</li>
-<li>CMS integration</li>
-<li>E-commerce functionality</li>
-<li>3 months free support</li>
-<li>45-day delivery</li>
+<li data-i18n="">Custom web application</li>
+<li data-i18n="">Full SEO optimization</li>
+<li data-i18n="">CMS integration</li>
+<li data-i18n="">E-commerce functionality</li>
+<li data-i18n="">3 months free support</li>
+<li data-i18n="">45-day delivery</li>
 </ul>
-<a href="#contact" class="pricing-btn primary">Start Project</a>
+<a class="pricing-btn primary" data-i18n="" href="#contact">Start Project</a>
 </div>
 <div class="pricing-card reveal">
 <div class="pricing-icon">🏢</div>
-<h3>Enterprise</h3>
-<p class="subtitle">Custom solutions at scale</p>
+<h3 data-i18n="">Enterprise</h3>
+<p class="subtitle" data-i18n="">Custom solutions at scale</p>
 <div class="pricing-price">
 <span class="currency">$</span>
 <span class="amount">4,999</span>
-<span class="period">/project</span>
+<span class="period" data-i18n="">/project</span>
 </div>
 <ul class="pricing-features">
-<li>Full-stack application</li>
-<li>Cloud infrastructure setup</li>
-<li>AI &amp; automation integration</li>
-<li>Security audit included</li>
-<li>6 months free support</li>
-<li>Dedicated project manager</li>
-<li>60-day delivery</li>
+<li data-i18n="">Full-stack application</li>
+<li data-i18n="">Cloud infrastructure setup</li>
+<li data-i18n="">AI &amp; automation integration</li>
+<li data-i18n="">Security audit included</li>
+<li data-i18n="">6 months free support</li>
+<li data-i18n="">Dedicated project manager</li>
+<li data-i18n="">60-day delivery</li>
 </ul>
-<a href="#contact" class="pricing-btn outline">Contact Me</a>
+<a class="pricing-btn outline" data-i18n="" href="#contact">Contact Me</a>
 </div>
 </div>
 <div class="offer-banner reveal">
 <div class="offer-content">
-<span class="offer-badge">🔥 Limited Offer</span>
-<h3>Get <span class="highlight">20% OFF</span> on Your First Project</h3>
-<p>New clients get 20% off any package. Use code: <strong>MFD20</strong> at checkout.</p>
+<span class="offer-badge" data-i18n="">🔥 Limited Offer</span>
+<h3 data-i18n="">Get <span class="highlight">20% OFF</span> on Your First Project</h3>
+<p data-i18n="">New clients get 20% off any package. Use code: <strong>MFD20</strong> at checkout.</p>
 </div>
-<a href="#contact" class="btn btn-primary">Claim Offer <span class="arrow">→</span></a>
+<a class="btn btn-primary" href="#contact"><span data-i18n="">Claim Offer</span> <span class="arrow">→</span></a>
 </div>
 </div>
 </section>
-
 <!-- ================= FAQ ================= -->
 <section id="faq">
 <div class="container">
 <div class="section-head reveal">
-<span class="eyebrow">Questions?</span>
-<h2>Frequently Asked Questions</h2>
-<p>Everything you need to know before we start working together.</p>
+<span class="eyebrow" data-i18n="">Questions?</span>
+<h2 data-i18n="">Frequently Asked Questions</h2>
+<p data-i18n="">Everything you need to know before we start working together.</p>
 </div>
 <div class="faq-list">
 <div class="faq-item reveal">
-<div class="faq-question">What services do you offer? <span class="faq-toggle">+</span></div>
-<div class="faq-answer">I offer a full range of IT services including web development, mobile app development, cloud infrastructure, cybersecurity, AI &amp; automation, UI/UX design, and ongoing technical support.</div>
+<div class="faq-question"><span data-i18n="">What services do you offer?</span> <span class="faq-toggle">+</span></div>
+<div class="faq-answer" data-i18n="">I offer a full range of IT services including web development, mobile app development, cloud infrastructure, cybersecurity, AI &amp; automation, UI/UX design, and ongoing technical support.</div>
 </div>
 <div class="faq-item reveal">
-<div class="faq-question">How long does a typical project take? <span class="faq-toggle">+</span></div>
-<div class="faq-answer">Project timelines vary based on complexity. A simple website takes 2-4 weeks, while complex web applications or mobile apps can take 2-4 months. I'll provide a detailed timeline during our initial consultation.</div>
+<div class="faq-question"><span data-i18n="">How long does a typical project take?</span> <span class="faq-toggle">+</span></div>
+<div class="faq-answer" data-i18n="">Project timelines vary based on complexity. A simple website takes 2-4 weeks, while complex web applications or mobile apps can take 2-4 months. I'll provide a detailed timeline during our initial consultation.</div>
 </div>
 <div class="faq-item reveal">
-<div class="faq-question">Do you provide ongoing support? <span class="faq-toggle">+</span></div>
-<div class="faq-answer">Absolutely! I offer 24/7 support and maintenance packages. Every project includes free support for 1-6 months depending on the package you choose.</div>
+<div class="faq-question"><span data-i18n="">Do you provide ongoing support?</span> <span class="faq-toggle">+</span></div>
+<div class="faq-answer" data-i18n="">Absolutely! I offer 24/7 support and maintenance packages. Every project includes free support for 1-6 months depending on the package you choose.</div>
 </div>
 <div class="faq-item reveal">
-<div class="faq-question">What is your payment structure? <span class="faq-toggle">+</span></div>
-<div class="faq-answer">Typically 40% upfront to start the project, 40% at the midpoint, and 20% upon completion. For larger projects, I can offer flexible payment plans.</div>
+<div class="faq-question"><span data-i18n="">What is your payment structure?</span> <span class="faq-toggle">+</span></div>
+<div class="faq-answer" data-i18n="">Typically 40% upfront to start the project, 40% at the midpoint, and 20% upon completion. For larger projects, I can offer flexible payment plans.</div>
 </div>
 <div class="faq-item reveal">
-<div class="faq-question">Can you work with my existing website or app? <span class="faq-toggle">+</span></div>
-<div class="faq-answer">Yes! I can audit, redesign, optimize, or extend your existing website or application. I'll review your current setup and provide recommendations.</div>
+<div class="faq-question"><span data-i18n="">Can you work with my existing website or app?</span> <span class="faq-toggle">+</span></div>
+<div class="faq-answer" data-i18n="">Yes! I can audit, redesign, optimize, or extend your existing website or application. I'll review your current setup and provide recommendations.</div>
 </div>
 <div class="faq-item reveal">
-<div class="faq-question">Do you sign NDAs and protect my intellectual property? <span class="faq-toggle">+</span></div>
-<div class="faq-answer">Absolutely. I sign NDAs before discussing project details and ensure all intellectual property rights are fully transferred to you upon completion.</div>
+<div class="faq-question"><span data-i18n="">Do you sign NDAs and protect my intellectual property?</span> <span class="faq-toggle">+</span></div>
+<div class="faq-answer" data-i18n="">Absolutely. I sign NDAs before discussing project details and ensure all intellectual property rights are fully transferred to you upon completion.</div>
 </div>
 </div>
 </div>
 </section>
-
 <!-- ================= CONTACT ================= -->
 <section id="contact">
 <div class="container">
 <div class="contact-grid">
 <div class="contact-info reveal">
-<h2>Let's Build Something Amazing</h2>
-<p>Have a project in mind? I'd love to hear about it. Get in touch and let's discuss how I can help.</p>
-<a class="contact-item" href="https://wa.me/966500000000" target="_blank" rel="noopener">
+<h2 data-i18n="">Let's Build Something Amazing</h2>
+<p data-i18n="">Have a project in mind? I'd love to hear about it. Get in touch and let's discuss how I can help.</p>
+<a class="contact-item" href="https://wa.me/966500000000" rel="noopener" target="_blank">
 <div class="ic">📱</div>
-<div class="txt"><strong>WhatsApp</strong><span>+966 50 000 0000</span></div>
+<div class="txt"><strong data-i18n="">WhatsApp</strong><span class="ltr-text">+966 50 000 0000</span></div>
 </a>
 <a class="contact-item" href="mailto:hello@mfdsolutions.com">
 <div class="ic">✉️</div>
-<div class="txt"><strong>Email</strong><span>hello@mfdsolutions.com</span></div>
+<div class="txt"><strong data-i18n="">Email</strong><span class="ltr-text">hello@mfdsolutions.com</span></div>
 </a>
 <a class="contact-item" href="tel:+966110000000">
 <div class="ic">📞</div>
-<div class="txt"><strong>Phone</strong><span>+966 11 000 0000</span></div>
+<div class="txt"><strong data-i18n="">Phone</strong><span class="ltr-text">+966 11 000 0000</span></div>
 </a>
 <a class="contact-item" href="#">
 <div class="ic">📍</div>
-<div class="txt"><strong>Location</strong><span>Riyadh, Saudi Arabia</span></div>
+<div class="txt"><strong data-i18n="">Location</strong><span data-i18n="">Riyadh, Saudi Arabia</span></div>
 </a>
 <a class="contact-item" href="#">
 <div class="ic">💼</div>
-<div class="txt"><strong>LinkedIn</strong><span>linkedin.com/in/mfdsolutions</span></div>
+<div class="txt"><strong data-i18n="">LinkedIn</strong><span class="ltr-text">linkedin.com/in/mfdsolutions</span></div>
 </a>
 </div>
 <div class="contact-form reveal">
-<h3>Send a Message</h3>
+<h3 data-i18n="">Send a Message</h3>
 <form id="contactForm">
 <div class="form-group">
-<input type="text" id="name" placeholder="Your Name *" required/>
-<div class="error-msg">Please enter your name.</div>
+<input data-i18n-attrs="placeholder" id="name" placeholder="Your Name *" required="" type="text"/>
+<div class="error-msg" data-i18n="">Please enter your name.</div>
 </div>
 <div class="form-group">
-<input type="email" id="email" placeholder="Your Email *" required/>
-<div class="error-msg">Please enter a valid email.</div>
+<input data-i18n-attrs="placeholder" id="email" placeholder="Your Email *" required="" type="email"/>
+<div class="error-msg" data-i18n="">Please enter a valid email.</div>
 </div>
 <div class="form-group">
-<textarea id="message" placeholder="Your Message *" required></textarea>
-<div class="error-msg">Please enter your message.</div>
+<textarea data-i18n-attrs="placeholder" id="message" placeholder="Your Message *" required=""></textarea>
+<div class="error-msg" data-i18n="">Please enter your message.</div>
 </div>
-<button type="submit" class="btn btn-primary" id="submitBtn">
-<span class="btn-text">Send Message</span>
+<button class="btn btn-primary" id="submitBtn" type="submit">
+<span class="btn-text" data-i18n="">Send Message</span>
 </button>
 <div class="form-status" id="formStatus"></div>
 </form>
@@ -890,88 +888,90 @@
 </div>
 </div>
 </section>
-
 <!-- ================= FOOTER ================= -->
 <footer>
 <div class="footer-grid">
-<div class="footer-col">
-<h4>MFD Solutions</h4>
-<p>Complete IT services — web, mobile, cloud, AI, cybersecurity and design. Turning ideas into digital reality since 2012.</p>
+<div class="footer-col footer-brand">
+<a aria-label="MFD Solutions" class="footer-logo" data-i18n-attrs="aria-label" href="#home">
+<div class="logo-icon">MFD</div>
+<div class="footer-logo-text"><strong data-i18n="">MFD Solutions</strong><span data-i18n="">Design &amp; Development</span></div>
+</a>
+<p data-i18n="">MFD Solutions delivers premium web, mobile, and cloud services worldwide. 12+ years of experience in Website Development and Graphic Design.</p>
 <div class="footer-social">
-<a href="#" aria-label="Facebook">f</a>
-<a href="#" aria-label="Twitter">X</a>
-<a href="#" aria-label="LinkedIn">in</a>
-<a href="#" aria-label="Instagram">ig</a>
+<a aria-label="Behance" href="https://www.behance.net/Farooq127" rel="noopener" target="_blank" title="Behance" translate="no">Be</a>
+<a aria-label="WhatsApp" href="https://wa.me/966570849844" rel="noopener" target="_blank" title="WhatsApp" translate="no">Wa</a>
+<a aria-label="Website" data-i18n-attrs="aria-label,title" href="https://sites.google.com/view/mohammadfarooq" rel="noopener" target="_blank" title="Website">🌐</a>
+<a aria-label="Email" data-i18n-attrs="aria-label,title" href="mailto:mohammadfarooq127@gmail.com" title="Email">@</a>
 </div>
 </div>
 <div class="footer-col">
-<h4>Services</h4>
+<h4 data-i18n="">Services</h4>
 <ul>
-<li><a href="#services">Web Development</a></li>
-<li><a href="#services">Mobile Apps</a></li>
-<li><a href="#services">Cloud Solutions</a></li>
-<li><a href="#services">Cybersecurity</a></li>
-<li><a href="#services">AI &amp; Automation</a></li>
+<li><a data-i18n="" href="#services">Web Designing</a></li>
+<li><a data-i18n="" href="#services">Web Development</a></li>
+<li><a data-i18n="" href="#services">Mobile App Development</a></li>
+<li><a data-i18n="" href="#services">CMS Development</a></li>
+<li><a data-i18n="" href="#services">E-Commerce</a></li>
+<li><a data-i18n="" href="#services">Graphic Design</a></li>
+<li><a data-i18n="" href="#services">Prototyping</a></li>
+<li><a data-i18n="" href="#services">SEO/SMO Services</a></li>
 </ul>
 </div>
 <div class="footer-col">
-<h4>Company</h4>
+<h4 data-i18n="">Quick Links</h4>
 <ul>
-<li><a href="#about">About Me</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#pricing">Pricing</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a data-i18n="" href="#home">Home</a></li>
+<li><a data-i18n="" href="#about">About Myself</a></li>
+<li><a data-i18n="" href="#services">Services</a></li>
+<li><a data-i18n="" href="#more-details">More Details</a></li>
+<li><a data-i18n="" href="#why-us">Why Us</a></li>
+<li><a data-i18n="" href="#portfolio">Latest Work</a></li>
+<li><a data-i18n="" href="#guarantee">Our Guarantee</a></li>
+<li><a data-i18n="" href="#pricing">Pricing</a></li>
+<li><a data-i18n="" href="#faq">FAQ</a></li>
 </ul>
 </div>
 <div class="footer-col">
-<h4>Get in Touch</h4>
-<a class="footer-contact-line" href="https://wa.me/966500000000" target="_blank" rel="noopener">
-<span class="fi wa">📱</span> +966 50 000 0000
-</a>
-<a class="footer-contact-line" href="mailto:hello@mfdsolutions.com">
-<span class="fi">✉️</span> hello@mfdsolutions.com
-</a>
-<a class="footer-contact-line" href="#">
-<span class="fi">📍</span> Riyadh, Saudi Arabia
-</a>
+<h4 data-i18n="">Get In Touch</h4>
+<a class="footer-contact-line" href="tel:+966570849844"><span class="fi">📞</span><span class="ltr-text">+966 570 849 844</span></a>
+<a class="footer-contact-line" href="https://wa.me/966570849844" rel="noopener" target="_blank"><span class="fi wa">💬</span><span><span data-i18n="">WhatsApp:</span> <span class="ltr-text">+966 570 849 844</span></span></a>
+<a class="footer-contact-line" href="mailto:mohammadfarooq127@gmail.com"><span class="fi">✉️</span><span class="ltr-text">mohammadfarooq127@gmail.com</span></a>
+<a class="footer-contact-line" href="https://sites.google.com/view/mohammadfarooq" rel="noopener" target="_blank"><span class="fi">🌐</span><span class="ltr-text">sites.google.com/​view/mohammadfarooq</span></a>
+<a class="footer-contact-line" href="https://www.behance.net/Farooq127" rel="noopener" target="_blank"><span class="fi">🎨</span><span class="ltr-text">behance.net/Farooq127</span></a>
+<div class="footer-contact-line footer-location"><span class="fi">📍</span><span data-i18n="">Riyadh, Saudi Arabia</span></div>
 </div>
 </div>
 <div class="footer-bottom">
-<p>&copy; 2024 MFD Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+<p>© <a data-i18n="" href="https://sites.google.com/view/mohammadfarooq" rel="noopener" target="_blank">MFD Solutions</a> <span data-i18n="">— Design &amp; Development. All rights reserved. | Riyadh, Saudi Arabia</span></p>
 </div>
 </footer>
-
 <!-- ================= WHATSAPP FLOATING ================= -->
-<a class="whatsapp-float" id="whatsappFloat" href="https://wa.me/966500000000?text=Hello%20MFD%20Solutions!%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-<span class="wa-label">Chat with me on WhatsApp</span>
+<a aria-label="Chat on WhatsApp" class="whatsapp-float" data-i18n-attrs="aria-label" href="https://wa.me/966500000000?text=Hello%20MFD%20Solutions!%20I%20want%20to%20discuss%20a%20project." id="whatsappFloat" rel="noopener" target="_blank">
+<span class="wa-label" data-i18n="">Chat with me on WhatsApp</span>
 <div class="wa-btn">
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
 </div>
 </a>
-
 <!-- ================= WHATSAPP CHAT POPUP ================= -->
 <div class="wa-chat-popup" id="waChatPopup">
 <div class="wa-chat-head">
 <div class="avatar">MFD</div>
 <div class="meta">
-<strong>MFD Solutions</strong>
-<small>Online now</small>
+<strong data-i18n="">MFD Solutions</strong>
+<small data-i18n="">Online now</small>
 </div>
 <button class="wa-chat-close" id="waChatClose">✕</button>
 </div>
 <div class="wa-chat-body">
-<div class="bubble">👋 Hi there! How can I help you today?</div>
-<div class="bubble">Feel free to ask about any of my services or pricing.</div>
+<div class="bubble" data-i18n="">👋 Hi there! How can I help you today?</div>
+<div class="bubble" data-i18n="">Feel free to ask about any of my services or pricing.</div>
 </div>
 <div class="wa-chat-actions">
-<a href="https://wa.me/966500000000?text=Hello%20MFD%20Solutions!%20I%20have%20a%20question." target="_blank" rel="noopener">Start Chat on WhatsApp</a>
+<a data-i18n="" href="https://wa.me/966500000000?text=Hello%20MFD%20Solutions!%20I%20have%20a%20question." rel="noopener" target="_blank">Start Chat on WhatsApp</a>
 </div>
 </div>
-
 <!-- ================= BACK TO TOP ================= -->
-<button class="back-top" id="backTop" aria-label="Back to top"> ↑ </button>
-
+<button aria-label="Back to top" class="back-top" data-i18n-attrs="aria-label" id="backTop"> ↑ </button>
 <script src="js/main-script.js"></script>
 </body>
 </html>

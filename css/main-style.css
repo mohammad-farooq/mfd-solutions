@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
   :root {
     --primary: #3b82f6;
     --primary-dark: #1d4ed8;
@@ -21,12 +22,6 @@
   .nav-tools{display:flex;align-items:center;gap:10px;flex-shrink:0}
   .language-toggle{border:1px solid rgba(148,163,184,.4);background:transparent;color:inherit;border-radius:10px;padding:7px 10px;font:inherit;font-size:.82rem;font-weight:800;cursor:pointer}
   .language-toggle:hover{background:rgba(59,130,246,.12);border-color:var(--primary)}
-  html[dir="rtl"] body{font-family:Tahoma,"Segoe UI",Arial,sans-serif}
-  html[dir="rtl"] .nav,html[dir="rtl"] .nav-links,html[dir="rtl"] .footer-grid{direction:rtl}
-  html[dir="rtl"] .slide-content,html[dir="rtl"] .section-head,html[dir="rtl"] .detail-text,html[dir="rtl"] .contact-form{text-align:right}
-  html[dir="rtl"] .detail-features{padding-inline-start:0;padding-inline-end:20px}
-  html[dir="rtl"] input,html[dir="rtl"] textarea{direction:rtl;text-align:right}
-  html[dir="rtl"] .carousel-nav{direction:ltr}
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
   body {
@@ -1773,6 +1768,17 @@
   .footer-bottom a { color: #60a5fa; text-decoration: none; transition: color 0.3s; }
   .footer-bottom a:hover { color: #93c5fd; }
 
+  /* ---- footer: brand block, location line (matches profile site) ---- */
+  .footer-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; margin-bottom: 18px; }
+  .footer-logo-text { display: flex; flex-direction: column; line-height: 1.15; }
+  .footer-logo-text strong { color: #fff; font-size: 1.1rem; font-weight: 800; letter-spacing: -0.2px; }
+  .footer-logo-text span { font-size: 0.7rem; font-weight: 600; color: #94a3b8; letter-spacing: 1.5px; text-transform: uppercase; }
+  .footer-contact-line > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+  .footer-location { cursor: default; }
+  .footer-location:hover { color: #94a3b8; transform: none; }
+  .footer-location:hover .fi { background: rgba(59,130,246,0.12); border-color: rgba(59,130,246,0.25); }
+  .ltr-text { direction: ltr; unicode-bidi: isolate; }
+
   /* ================= WHATSAPP ================= */
   .whatsapp-float {
     position: fixed; right: 24px; bottom: 96px;
@@ -1961,4 +1967,110 @@
     .newsletter-form { flex-direction: column; }
     .newsletter-form input { min-width: 100%; }
     .newsletter-form button { width: 100%; }
+  }
+
+
+  /* =====================================================================
+     ARABIC / RTL  (applied when <html dir="rtl" lang="ar">)
+     ===================================================================== */
+  html[dir="rtl"] body,
+  html[dir="rtl"] button,
+  html[dir="rtl"] input,
+  html[dir="rtl"] textarea,
+  html[dir="rtl"] select {
+    font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
+  }
+  html[dir="rtl"] body { line-height: 1.8; }
+  html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3, html[dir="rtl"] h4 { line-height: 1.45; }
+  /* letter-spacing and uppercase break Arabic letter joining */
+  html[dir="rtl"] * { letter-spacing: 0 !important; text-transform: none !important; }
+
+  /* header / nav */
+  html[dir="rtl"] .nav-links { gap: 12px; }
+  html[dir="rtl"] .nav-links a { white-space: nowrap; }
+  html[dir="rtl"] .nav-links a::after { left: auto; right: 0; }
+  html[dir="rtl"] .scroll-progress { left: auto; right: 0; }
+
+  /* hero */
+  html[dir="rtl"] .carousel-slide.slide-variant-left .slide-content > * { animation-name: slideInRight3D; }
+  html[dir="rtl"] .carousel-slide.slide-variant-right .slide-content > * { animation-name: slideInLeft3D; }
+  html[dir="rtl"] .slide-stat:hover { padding-left: 0; padding-right: 10px; }
+
+  /* marquee keeps scrolling left-to-right as designed */
+  html[dir="rtl"] .services-marquee { direction: ltr; }
+  html[dir="rtl"] .marquee-item { direction: rtl; }
+
+  /* Latin tech tokens (".NET", "AWS / Azure", "React / Node / PHP") keep their own order */
+  html[dir="rtl"] .skill-tag,
+  html[dir="rtl"] .tech-item h4,
+  html[dir="rtl"] .slide-stat .val { unicode-bidi: plaintext; }
+
+  /* scroll-reveal directions */
+  html[dir="rtl"] .reveal-left { transform: translateX(70px); }
+  html[dir="rtl"] .reveal-right { transform: translateX(-70px); }
+  html[dir="rtl"] .reveal-left.visible,
+  html[dir="rtl"] .reveal-right.visible { transform: translateX(0); }
+
+  /* buttons + arrows (arrow glyph is mirrored so it points "forward" in Arabic) */
+  html[dir="rtl"] .btn .arrow { display: inline-block; transform: scaleX(-1); }
+  html[dir="rtl"] .btn:hover .arrow { transform: translateX(-5px) scaleX(-1); }
+
+  /* badges / corner decorations */
+  html[dir="rtl"] .about-image-badge { right: auto; left: 24px; }
+  html[dir="rtl"] .detail-img .badge { left: auto; right: 20px; }
+  html[dir="rtl"] .process-step::after { right: auto; left: 20px; }
+  html[dir="rtl"] .pricing-badge { right: auto; left: 18px; }
+  html[dir="rtl"] .testimonial-card::before { right: auto; left: 30px; }
+
+  /* tick lists */
+  html[dir="rtl"] .feature-list li { padding: 10px 40px 10px 0; }
+  html[dir="rtl"] .feature-list li::before { left: auto; right: 0; }
+  html[dir="rtl"] .feature-list li:hover { padding-left: 0; padding-right: 50px; }
+  html[dir="rtl"] .detail-features li { padding: 10px 38px 10px 0; }
+  html[dir="rtl"] .detail-features li::before { left: auto; right: 0; }
+  html[dir="rtl"] .detail-features li:hover { padding-left: 0; padding-right: 46px; }
+  html[dir="rtl"] .guarantee-list li { padding: 12px 42px 12px 0; }
+  html[dir="rtl"] .guarantee-list li::before { left: auto; right: 0; }
+  html[dir="rtl"] .guarantee-list li:hover { padding-left: 0; padding-right: 52px; }
+  html[dir="rtl"] .pricing-features li { padding: 9px 30px 9px 0; }
+  html[dir="rtl"] .pricing-features li::before { left: auto; right: 0; }
+
+  /* hover nudges */
+  html[dir="rtl"] .cred-item:hover { transform: translateX(-6px); }
+  html[dir="rtl"] .contact-item:hover { transform: translateX(-8px); }
+  html[dir="rtl"] .footer-col ul a:hover { transform: translateX(-6px); }
+  html[dir="rtl"] .footer-contact-line:hover { transform: translateX(-4px); }
+  html[dir="rtl"] .footer-location:hover { transform: none; }
+
+  /* pricing: keep "$ 499 /project" in the same visual order */
+  html[dir="rtl"] .pricing-price { direction: ltr; }
+
+  /* phone / e-mail / urls stay left-to-right but sit on the start (right) edge */
+  html[dir="rtl"] .ltr-text { display: inline-block; text-align: left; }
+
+  /* forms */
+  html[dir="rtl"] input, html[dir="rtl"] textarea { direction: rtl; text-align: right; }
+  html[dir="rtl"] input[type="email"] { direction: ltr; text-align: right; }
+  html[dir="rtl"] input[type="email"]::placeholder { direction: rtl; }
+  html[dir="rtl"] .error-msg { padding-left: 0; padding-right: 4px; }
+  html[dir="rtl"] .btn.loading .btn-text::after { margin-left: 0; margin-right: 10px; }
+
+  /* footer */
+  html[dir="rtl"] .footer-col h4::after { left: auto; right: 0; }
+
+  /* floating widgets move to the left side */
+  html[dir="rtl"] .whatsapp-float { right: auto; left: 24px; }
+  html[dir="rtl"] .whatsapp-float .wa-label { margin-right: 0; margin-left: 10px; transform: translateX(-20px); }
+  html[dir="rtl"] .whatsapp-float:hover .wa-label,
+  html[dir="rtl"] .whatsapp-float.open .wa-label { transform: translateX(0); }
+  html[dir="rtl"] .whatsapp-float .wa-btn::after { right: auto; left: 2px; }
+  html[dir="rtl"] .wa-chat-popup { right: auto; left: 24px; }
+  html[dir="rtl"] .wa-chat-close { right: auto; left: 12px; }
+  html[dir="rtl"] .back-top { right: auto; left: 30px; }
+
+  @media (max-width: 720px) {
+    html[dir="rtl"] .back-top { left: 20px; }
+    html[dir="rtl"] .whatsapp-float { left: 16px; }
+    html[dir="rtl"] .wa-chat-popup { left: 16px; }
+    html[dir="rtl"] .testimonial-card::before { left: 20px; }
   }
